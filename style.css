@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.colors{
+    color:#d7d7d7;
+    color:#58094F;
+    color:#955780;
+    color:#d5e8b8;
+    color:#3d8047;
+    color:#172b0d;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+.background{
+    font-family: Cormorant, sans-serif;
+    background-color: #63d471;
+    background-image: linear-gradient(135deg, #233329 15%, #2c8236 35%, #233329 50%, #2c8236 90%);
+}
+
+
+li{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 400;
+}
+
+.nav-menu li{
+    background-color: #172b0d;
+    color: #d5e8b8;
+    font-size: 1.5rem;
+}
+
+.nav_index{
+    z-index: 10;
+}
+
+nav li{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+nav li ul{
+    display: none;
+    position: fixed;
+    left: 0;
+}
+
+nav li:hover ul{
+    display: flex;
+    animation: movedown 1s ease-in-out;
+    transform-origin: top;
+}
+
+
+ @keyframes movedown {
+    0% {
+      transform: scaleY(0);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+
+
+  .hgradient{
+    background: radial-gradient(circle at -3.1% -4.3%, rgb(52, 236, 172) 0%, rgb(18, 83, 22) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h2{
+    -webkit-text-stroke: 1px #172b0d;
+  }
+
+
+.footer{
+    font-size: 1.5rem;
+}
+
+
+.fade{
+    animation: fadeIn  1.5s;
+}
+
+@keyframes fadeIn  {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+
+input{
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #edefee;
+  border: 2px solid #495e57;
+}
+
+label{
+  display: block;
+  margin-top: 10px;
+}
+
+
+input[type=text], input[type=email], input[type=tel], textarea[type=text], input[type=date], input[type=number],
+input[type=password]{
+  padding: 12px 20px;   color: #495e57
+}
+
+.gpay-card-info-iframe{
+  background-color: #172b0d;
+  border-radius: 8px;
+  border: 2px solid #d5e8b8;
+}
+
+#gpay button{
+  border: 2px solid #d5e8b8;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  color: #fff;
+  box-shadow: inset 0 0 10px #0bf4f3, 0 0 20px #0bf497 inset, 0 0 20px #0bf497 inset;
+}
+
+.paginate{
+  display: inline-block;
+  margin: 8px;
+}
+
+.paginate-li{
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  text-justify: center;
+}
+
+.gem{
+  background: #3d8047;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 5px;
+  border-top-color: #172b0d;
+  border-left-color: #172b0d;
+  border-right-color: #d5e8b8;
+  border-bottom-color: #d5e8b8;
+}
+
+input{
+  height: 50px;
+  border-radius: 20px;
+  background-color: #edefee;
+  width: 100%;
+}
